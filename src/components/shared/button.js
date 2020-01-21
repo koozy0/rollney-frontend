@@ -19,15 +19,17 @@ export default Button
 
 const styles = {
   button: {
-    fontSize: "1rem",
-    height: "40px",
+    fontSize: "2.5vmin",
+    lineHeight: "1.5",
+    fontWeight: "600",
+    minHeight: "40px",
     minWidth: "64px",
     padding: "0 16px",
     background: "transparent",
     color: "#fff",
     border: "4px solid #fff",
     cursor: "pointer",
-    fontFamily: "RenogareRegular",
+    fontFamily: "MontserratRegular",
     userSelect: "none",
   },
   link: {

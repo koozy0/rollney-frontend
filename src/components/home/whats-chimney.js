@@ -45,6 +45,8 @@ const styles = {
     textAlign: "center",
     fontFamily: "MontserratRegular",
     color: "#fff",
+    lineHeight: "1.5",
+    fontSize: "4vmin",
   },
   button: {
     position: "relative",

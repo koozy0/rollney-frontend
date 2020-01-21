@@ -22,11 +22,6 @@ const styles = {
   wrapper: {
     padding: "15%",
   },
-  text: {
-    textAlign: "center",
-    fontFamily: "MontserratRegular",
-    color: "#fff",
-  },
   header: {
     base: {
       fontSize: "7vmax",
@@ -44,6 +39,13 @@ const styles = {
       display: "block",
       textAlign: "right",
     },
+  },
+  text: {
+    textAlign: "center",
+    fontFamily: "MontserratRegular",
+    color: "#fff",
+    lineHeight: "1.5",
+    fontSize: "4vmin",
   },
   button: {
     position: "relative",
