@@ -34,18 +34,19 @@ const styles = {
   copyright: {
     fontFamily: "MontserratRegular",
     fontWeight: "600",
-    fontSize: ".8rem",
+    fontSize: "2vmin",
   },
   social: {
     fontFamily: "MontserratRegular",
-    fontSize: ".7rem",
+    fontSize: "1.5vmin",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginBottom: "2rem",
   },
   logo: {
     height: "36px",
     width: "36px",
-    margin: "18px",
+    margin: "0 18px",
   },
 }

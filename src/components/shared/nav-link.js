@@ -5,12 +5,9 @@ function NavLink({ to, style, children }) {
   const internal = /^\/(?!\/)/.test(to)
 
   return (
-    <span
+    <button
       style={{
-        padding: "0 16px",
-        color: `#5f3713`,
-        fontFamily: "MontserratRegular",
-        fontWeight: "400",
+        ...styles.wrapper,
         ...style,
       }}
     >
@@ -27,16 +24,32 @@ function NavLink({ to, style, children }) {
       ) : (
         children
       )}
-    </span>
+    </button>
   )
 }
 
 export default NavLink
 
 const styles = {
+  wrapper: {
+    color: `#5f3713`,
+    fontFamily: "MontserratRegular",
+    fontWeight: "400",
+    fontSize: "1rem",
+    minWidth: "64px",
+    background: "transparent",
+    border: "0",
+    padding: "0 16px",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
+    textOverflow: "ellipsis",
+  },
   link: {
     textDecoration: "none",
     color: "inherit",
     lineHeight: "2",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
+    textOverflow: "ellipsis",
   },
 }

@@ -46,6 +46,7 @@ const styles = {
     textAlign: "center",
     fontFamily: "MontserratRegular",
     color: "#fff",
+    fontSize: "3vmin",
   },
   link: {
     color: "#fff",

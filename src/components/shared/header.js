@@ -18,7 +18,7 @@ const Header = () => (
     >
       <NavLink to="#our-menu">OUR MENU</NavLink>
       <NavLink to="#press-awards">PRESS/AWARDS</NavLink>
-      <NavLink to="/">
+      <NavLink to="/" style={{ overflow: "unset", minWidth: "unset" }}>
         <Logo />
       </NavLink>
       <NavLink to="#find-us">FIND US</NavLink>
