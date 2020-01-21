@@ -19,7 +19,6 @@ function FindUsContainer() {
       <div style={styles.content}>
         <LocationBanner />
       </div>
-      <div style={{ ...styles.wave.wrapper, bottom: "0" }}></div>
     </section>
   )
 }
@@ -32,7 +31,7 @@ const styles = {
   },
   wave: {
     wrapper: {
-      height: "10vmax",
+      height: "12vmax",
       overflow: "hidden",
       position: "absolute",
       width: "100%",

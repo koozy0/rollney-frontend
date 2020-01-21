@@ -1,5 +1,7 @@
 import Logo from "./logo"
 import React from "react"
+import facebookLogo from "../../images/facebook.png"
+import instagramLogo from "../../images/instagram.png"
 
 function Footer() {
   return (
@@ -8,6 +10,12 @@ function Footer() {
       <p style={styles.copyright}>
         COPYRIGHT ROLLNEY MALAYSIA, ALL RIGHT RESERVED &copy; 2019
       </p>
+      <div style={styles.social}>
+        <span>rollneymalaysia</span>
+        <img src={instagramLogo} alt="Instagram logo" style={styles.logo} />
+        <img src={facebookLogo} alt="Facebook logo" style={styles.logo} />
+        <span>Rollney Malaysia</span>
+      </div>
     </footer>
   )
 }
@@ -27,5 +35,17 @@ const styles = {
     fontFamily: "MontserratRegular",
     fontWeight: "600",
     fontSize: ".8rem",
+  },
+  social: {
+    fontFamily: "MontserratRegular",
+    fontSize: ".7rem",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  logo: {
+    height: "36px",
+    width: "36px",
+    margin: "18px",
   },
 }

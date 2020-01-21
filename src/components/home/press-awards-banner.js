@@ -17,16 +17,16 @@ function PressAwardsBanner() {
       tv2: file(relativePath: { eq: "press-award-tv2.png" }) {
         id
         childImageSharp {
-          fixed(width: 128) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 128) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       tv3: file(relativePath: { eq: "press-award-tv3.png" }) {
         id
         childImageSharp {
-          fixed(width: 128) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 128) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -38,8 +38,10 @@ function PressAwardsBanner() {
       <div style={styles.overlay}>
         <div style={styles.captionGroup}>
           <p style={styles.caption}>Highly Recommended By</p>
-          <Img fixed={data.tv3.childImageSharp.fixed} fadeIn={true} />
-          <Img fixed={data.tv2.childImageSharp.fixed} fadeIn={true} />
+          <div style={styles.grid}>
+            <Img fluid={data.tv3.childImageSharp.fluid} fadeIn={true} />
+            <Img fluid={data.tv2.childImageSharp.fluid} fadeIn={true} />
+          </div>
         </div>
       </div>
       <Img fluid={data.banner.childImageSharp.fluid} fadeIn={true} />
@@ -71,8 +73,11 @@ const styles = {
     position: "absolute",
     top: "50%",
     left: "50%",
-    transform: "translateX(-50%)",
-    fontSize: "1.5rem",
+    transform: "translate(-50%, -50%)",
+    fontSize: "4vmin",
+  },
+  caption: {
+    marginBottom: "8vmin",
   },
   logo: {
     tv2: {
@@ -83,5 +88,9 @@ const styles = {
       height: "64px",
       width: "128px",
     },
+  },
+  grid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(64px, 1fr))",
   },
 }

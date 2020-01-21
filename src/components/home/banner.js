@@ -9,7 +9,7 @@ function Banner() {
       image: file(relativePath: { eq: "banner.jpg" }) {
         id
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -50,7 +50,7 @@ const styles = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: "1.5rem",
+    fontSize: "4vmin",
     fontWeight: "600",
   },
 }

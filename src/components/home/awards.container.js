@@ -17,14 +17,7 @@ function AwardsContainer() {
         </svg>
       </div>
       <div style={styles.content}>
-        <h2
-          style={{
-            textAlign: "center",
-            color: "#fff",
-          }}
-        >
-          Press Awards
-        </h2>
+        <h2 style={styles.header}>PRESS / AWARDS</h2>
         <PressAwardsBanner />
       </div>
     </section>
@@ -34,6 +27,12 @@ function AwardsContainer() {
 export default AwardsContainer
 
 const styles = {
+  header: {
+    textAlign: "center",
+    color: "#fff",
+    fontFamily: "MontserratRegular",
+    fontSize: "4vmin",
+  },
   wave: {
     wrapper: {
       height: "12vmax",
