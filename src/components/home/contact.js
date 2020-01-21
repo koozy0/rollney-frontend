@@ -47,7 +47,7 @@ const styles = {
     fontFamily: "MontserratRegular",
     color: "#fff",
     lineHeight: "1.5",
-    fontSize: "2.5vmin",
+    fontSize: "calc(1rem + .5vmin)",
   },
   link: {
     color: "#fff",

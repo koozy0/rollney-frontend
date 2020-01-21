@@ -129,7 +129,7 @@ const styles = {
   img: { height: "100%" },
   header: {
     base: {
-      fontSize: "7vmax",
+      fontSize: "calc(2rem + 4vmin)",
       fontWeight: "400",
       padding: "0 10%",
     },
@@ -148,6 +148,6 @@ const styles = {
   },
   text: {
     lineHeight: "1.5",
-    fontSize: "2.5vmin",
+    fontSize: "calc(1rem + .5vmin)",
   },
 }

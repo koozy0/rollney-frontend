@@ -45,7 +45,7 @@ const styles = {
     fontFamily: "MontserratRegular",
     color: "#fff",
     lineHeight: "1.5",
-    fontSize: "4vmin",
+    fontSize: "calc(1rem + .5vmin)",
   },
   button: {
     position: "relative",

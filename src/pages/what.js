@@ -69,11 +69,11 @@ const styles = {
     maxWidth: "960px",
     margin: "0 auto",
     fontFamily: "MontserratRegular",
-    padding: "5%",
+    padding: "0 5%",
   },
   header: {
     base: {
-      fontSize: "7vmax",
+      fontSize: "calc(2rem + 4vmin)",
       fontWeight: "400",
       padding: "0 10%",
       textAlign: "right",
@@ -91,6 +91,6 @@ const styles = {
   },
   text: {
     lineHeight: "1.5",
-    fontSize: "2.5vmin",
+    fontSize: "calc(1rem + .5vmin)",
   },
 }

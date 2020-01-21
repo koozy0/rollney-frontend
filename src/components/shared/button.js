@@ -19,7 +19,7 @@ export default Button
 
 const styles = {
   button: {
-    fontSize: "2.5vmin",
+    fontSize: "1rem",
     lineHeight: "1.5",
     fontWeight: "600",
     minHeight: "40px",
