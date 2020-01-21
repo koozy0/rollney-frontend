@@ -46,7 +46,7 @@ const AboutPage = () => {
 
   return (
     <Layout>
-      <SEO title='About Rollney' />
+      <SEO title="About Rollney" />
       <section
         style={{
           background: "#F4D2BA",
@@ -90,7 +90,7 @@ const AboutPage = () => {
             <Img
               fluid={data.aboutLeft.childImageSharp.fluid}
               style={{ height: "100%" }}
-              fadeIn='true'
+              fadeIn={true}
             />
           </div>
           <div
@@ -101,7 +101,7 @@ const AboutPage = () => {
             <Img
               fluid={data.aboutTopRight.childImageSharp.fluid}
               style={{ height: "100%" }}
-              fadeIn='true'
+              fadeIn={true}
             />
           </div>
           <div
@@ -112,7 +112,7 @@ const AboutPage = () => {
             <Img
               fluid={data.aboutBottomRight.childImageSharp.fluid}
               style={{ height: "100%" }}
-              fadeIn='true'
+              fadeIn={true}
             />
           </div>
         </div>

@@ -4,7 +4,7 @@ import SEO from "../components/shared/seo"
 
 const MenuPage = () => (
   <Layout>
-    <SEO title='Our Menu' />
+    <SEO title="Our Menu" />
     <div
       style={{
         width: "100%",

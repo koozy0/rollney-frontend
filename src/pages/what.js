@@ -56,7 +56,7 @@ const WhatPage = () => {
         <Img
           fluid={data.image.childImageSharp.fluid}
           style={{ height: "100%" }}
-          fadeIn='true'
+          fadeIn={true}
         />
       </section>
     </Layout>

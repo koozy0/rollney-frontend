@@ -1,28 +1,11 @@
 import { Link } from "gatsby"
 import React from "react"
 
-function Button({ to, children }) {
+function Button({ style, to, children }) {
   return (
-    <button
-      style={{
-        fontSize: "1rem",
-        height: "40px",
-        minWidth: "64px",
-        padding: "0 16px",
-        background: "transparent",
-        color: "#fff",
-        border: "2px solid #fff",
-        cursor: "pointer",
-      }}
-    >
+    <button style={{ ...style, ...styles.button }}>
       {to ? (
-        <Link
-          to={to}
-          style={{
-            textDecoration: "none",
-            color: "inherit",
-          }}
-        >
+        <Link to={to} style={styles.link}>
           {children}
         </Link>
       ) : (
@@ -33,3 +16,22 @@ function Button({ to, children }) {
 }
 
 export default Button
+
+const styles = {
+  button: {
+    fontSize: "1rem",
+    height: "40px",
+    minWidth: "64px",
+    padding: "0 16px",
+    background: "transparent",
+    color: "#fff",
+    border: "4px solid #fff",
+    cursor: "pointer",
+    fontFamily: "RenogareRegular",
+    userSelect: "none",
+  },
+  link: {
+    textDecoration: "none",
+    color: "inherit",
+  },
+}

@@ -3,12 +3,12 @@ import React from "react"
 function Contact() {
   return (
     <section
-      id='contact-us'
+      id="contact-us"
       style={{
         height: "600px",
         background: "#F4C9AB",
         padding: "32px",
-        backgroundImage: "linear-gradient(to right, #F4D2BA 50%, #D69D75 50%)",
+        backgroundImage: "linear-gradient(to right, #e2ccb4 50%, #cdb29f 50%)",
       }}
     >
       <h2

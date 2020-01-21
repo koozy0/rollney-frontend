@@ -1,7 +1,8 @@
-import About from "../components/home/about"
-import Awards from "../components/home/awards"
+import AboutContainer from "../components/home/about.container"
+import AwardsContainer from "../components/home/awards.container"
+import Banner from "../components/home/banner"
 import Contact from "../components/home/contact"
-import Image from "../components/image"
+import FindUsContainer from "../components/home/find-us.container"
 import Layout from "../components/shared/layout"
 import Location from "../components/home/location"
 import Menu from "../components/home/menu"
@@ -10,14 +11,12 @@ import SEO from "../components/shared/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title='Home' />
-    <div>
-      <Image />
-    </div>
-    <About />
+    <SEO title="Home" />
+    <Banner />
+    <AboutContainer />
     <Menu />
-    <Awards />
-    <Location />
+    <AwardsContainer />
+    <FindUsContainer />
     <Contact />
   </Layout>
 )

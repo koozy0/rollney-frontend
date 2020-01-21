@@ -1,33 +1,28 @@
+import Logo from "./logo"
 import NavLink from "./nav-link"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#F4B486`,
-      position: "sticky",
-      top: "0",
-      zIndex: "100",
-    }}
-  >
+const Header = () => (
+  <header style={styles.wrapper}>
     <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `0 1.0875rem`,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        height: "100%",
       }}
     >
-      <NavLink to='/menu'>OUR MENU</NavLink>
-      <NavLink to='#press-awards'>PRESS/AWARDS</NavLink>
-      <NavLink style={{ fontSize: "32px" }} to='/'>
-        {siteTitle}
+      <NavLink to="#our-menu">OUR MENU</NavLink>
+      <NavLink to="#press-awards">PRESS/AWARDS</NavLink>
+      <NavLink to="/">
+        <Logo />
       </NavLink>
-      <NavLink to='#find-us'>FIND US</NavLink>
-      <NavLink to='#contact-us'>CONTACT US</NavLink>
+      <NavLink to="#find-us">FIND US</NavLink>
+      <NavLink to="#contact-us">CONTACT US</NavLink>
     </div>
   </header>
 )
@@ -41,3 +36,13 @@ Header.defaultProps = {
 }
 
 export default Header
+
+const styles = {
+  wrapper: {
+    background: `#fbbc89`,
+    position: "sticky",
+    top: "0",
+    zIndex: "1000",
+    minHeight: "64px",
+  },
+}

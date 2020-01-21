@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "DancingScriptRegular";
+  src: url("../../static/fonts/DancingScriptRegular.woff");
+  format: ("woff");
+}
+
+@font-face {
+  font-family: "RenogareRegular";
+  src: url("../../static/fonts/RenogareRegular.woff");
+  format: ("woff");
+}
+
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../../static/fonts/MontserratRegular.woff");
+  format: ("woff");
+}

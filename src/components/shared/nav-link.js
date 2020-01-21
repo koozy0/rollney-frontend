@@ -2,24 +2,28 @@ import { Link } from "gatsby"
 import React from "react"
 
 function NavLink({ to, style, children }) {
+  const internal = /^\/(?!\/)/.test(to)
+
   return (
     <span
       style={{
         padding: "0 16px",
-        color: `#333`,
+        color: `#5f3713`,
+        fontFamily: "MontserratRegular",
+        fontWeight: "400",
         ...style,
       }}
     >
       {to ? (
-        <Link
-          to={to}
-          style={{
-            textDecoration: "none",
-            color: "inherit",
-          }}
-        >
-          {children}
-        </Link>
+        internal ? (
+          <Link to={to} style={styles.link}>
+            {children}
+          </Link>
+        ) : (
+          <a href={to} style={styles.link}>
+            {children}
+          </a>
+        )
       ) : (
         children
       )}
@@ -28,3 +32,11 @@ function NavLink({ to, style, children }) {
 }
 
 export default NavLink
+
+const styles = {
+  link: {
+    textDecoration: "none",
+    color: "inherit",
+    lineHeight: "2",
+  },
+}

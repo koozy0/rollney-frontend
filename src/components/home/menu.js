@@ -3,10 +3,10 @@ import React from "react"
 function Menu() {
   return (
     <section
-      id='our-menu'
+      id="our-menu"
       style={{
         height: "600px",
-        background: "#F4D2BA",
+        background: "#eed1b3",
         padding: "32px",
       }}
     >
