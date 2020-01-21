@@ -29,7 +29,7 @@ const styles = {
   },
   header: {
     base: {
-      fontSize: "6vmax",
+      fontSize: "7vmax",
       fontWeight: "400",
     },
     cursive: {

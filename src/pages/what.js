@@ -25,25 +25,19 @@ const WhatPage = () => {
   return (
     <Layout>
       <SEO title="What's a Chimney" />
-      <section
-        style={{
-          background: "#F4D2BA",
-        }}
-      >
-        <div
-          style={{
-            width: "100%",
-            maxWidth: "960px",
-            margin: "0 auto",
-            padding: "5%",
-          }}
-        >
-          <h1>What's a Chimney</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-            minus expedita ipsa mollitia cupiditate. Deleniti excepturi, quaerat
-            pariatur sapiente assumenda saepe doloremque! Veniam sequi, atque ea
-            magni accusamus ullam! Accusantium?
+      <section style={styles.wrapper}>
+        <div style={styles.content}>
+          <h3 style={styles.header.base}>
+            <span style={styles.header.cursive}>What's a</span>
+            <span style={styles.header.regular}>Chimney</span>
+          </h3>
+          <p style={styles.text}>
+            Known as Kürtöskalács in Hungarian chimney cake are unique
+            bread-like freshly baked Hungarian pastries, named after their
+            hollow cylindrical shape. They have a satisfying crunch on the
+            outside and a delicious, light and fluffy dough inside. The freshly
+            baked dough inside remain fluffy and soft like the best piece of
+            bread you've never eaten.
           </p>
         </div>
       </section>
@@ -64,3 +58,39 @@ const WhatPage = () => {
 }
 
 export default WhatPage
+
+const styles = {
+  wrapper: {
+    background: "#F4D2BA",
+    padding: "5% 0",
+  },
+  content: {
+    width: "100%",
+    maxWidth: "960px",
+    margin: "0 auto",
+    fontFamily: "MontserratRegular",
+    padding: "5%",
+  },
+  header: {
+    base: {
+      fontSize: "7vmax",
+      fontWeight: "400",
+      padding: "0 10%",
+      textAlign: "right",
+    },
+    cursive: {
+      color: "#fff",
+      fontFamily: "DancingScriptRegular",
+      display: "block",
+    },
+    regular: {
+      color: "#fbbc89",
+      fontFamily: "RenogareRegular",
+      display: "block",
+    },
+  },
+  text: {
+    fontSize: "3vmin",
+    lineHeight: "1.5",
+  },
+}

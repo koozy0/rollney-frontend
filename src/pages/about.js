@@ -47,41 +47,27 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEO title="About Rollney" />
-      <section
-        style={{
-          background: "#F4D2BA",
-        }}
-      >
-        <div
-          style={{
-            width: "100%",
-            maxWidth: "960px",
-            margin: "0 auto",
-            padding: "5%",
-          }}
-        >
-          <h1>About Rollney</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-            minus expedita ipsa mollitia cupiditate. Deleniti excepturi, quaerat
-            pariatur sapiente assumenda saepe doloremque! Veniam sequi, atque ea
-            magni accusamus ullam! Accusantium?
+      <section style={styles.wrapper}>
+        <div style={styles.content}>
+          <h1 style={styles.header.base}>
+            <span style={styles.header.cursive}>About</span>
+            <span style={styles.header.regular}>Rollney</span>
+          </h1>
+          <p style={styles.text}>
+            <strong>Rollney</strong> took hours to make every single
+            Kürtöskalács to birng the best and traditional Kürtöskalács in town.
+            With our open rotiserrie grill, Hungarian heritage and traditional
+            baking methods and we are proud to bring Kürtöskalács, the delicious
+            and unique treat fresh from Hungary to Malaysia.
+          </p>
+          <p style={styles.text}>
+            Rollney is more than just a dessert, we spread happiness and
+            committed to bring the finest Kürtöskalács to you.
           </p>
         </div>
       </section>
-      <section
-        style={{
-          background: "#F4D2BA",
-          paddingBottom: "10%",
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateAreas: "'left top-right' 'left bottom-right'",
-            gridGap: "8px",
-          }}
-        >
+      <section style={styles.wrapper}>
+        <div style={styles.imgGrid}>
           <div
             style={{
               gridArea: "left",
@@ -89,7 +75,7 @@ const AboutPage = () => {
           >
             <Img
               fluid={data.aboutLeft.childImageSharp.fluid}
-              style={{ height: "100%" }}
+              style={styles.img}
               fadeIn={true}
             />
           </div>
@@ -100,7 +86,7 @@ const AboutPage = () => {
           >
             <Img
               fluid={data.aboutTopRight.childImageSharp.fluid}
-              style={{ height: "100%" }}
+              style={styles.img}
               fadeIn={true}
             />
           </div>
@@ -111,7 +97,7 @@ const AboutPage = () => {
           >
             <Img
               fluid={data.aboutBottomRight.childImageSharp.fluid}
-              style={{ height: "100%" }}
+              style={styles.img}
               fadeIn={true}
             />
           </div>
@@ -122,3 +108,46 @@ const AboutPage = () => {
 }
 
 export default AboutPage
+
+const styles = {
+  wrapper: {
+    background: "#F4D2BA",
+    padding: "5% 0",
+  },
+  content: {
+    width: "100%",
+    maxWidth: "960px",
+    margin: "0 auto",
+    fontFamily: "MontserratRegular",
+    padding: "5%",
+  },
+  imgGrid: {
+    display: "grid",
+    gridTemplateAreas: "'left top-right' 'left bottom-right'",
+    gridGap: "8px",
+  },
+  img: { height: "100%" },
+  header: {
+    base: {
+      fontSize: "7vmax",
+      fontWeight: "400",
+      padding: "0 10%",
+    },
+    cursive: {
+      color: "#fff",
+      fontFamily: "DancingScriptRegular",
+      display: "block",
+      textAlign: "left",
+    },
+    regular: {
+      color: "#fbbc89",
+      fontFamily: "RenogareRegular",
+      display: "block",
+      textAlign: "right",
+    },
+  },
+  text: {
+    fontSize: "3vmin",
+    lineHeight: "1.5",
+  },
+}

@@ -16,13 +16,13 @@ const Header = () => (
         height: "100%",
       }}
     >
-      <NavLink to="#our-menu">OUR MENU</NavLink>
-      <NavLink to="#press-awards">PRESS/AWARDS</NavLink>
+      <NavLink to="/#our-menu">OUR MENU</NavLink>
+      <NavLink to="/#press-awards">PRESS/AWARDS</NavLink>
       <NavLink to="/" style={{ overflow: "unset", minWidth: "unset" }}>
         <Logo />
       </NavLink>
-      <NavLink to="#find-us">FIND US</NavLink>
-      <NavLink to="#contact-us">CONTACT US</NavLink>
+      <NavLink to="/#find-us">FIND US</NavLink>
+      <NavLink to="/#contact-us">CONTACT US</NavLink>
     </div>
   </header>
 )
