@@ -9,6 +9,7 @@ import "./layout.css"
 
 import { graphql, useStaticQuery } from "gatsby"
 
+import Footer from "./footer"
 import Header from "./header"
 import PropTypes from "prop-types"
 import React from "react"
@@ -29,21 +30,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
-        <footer
-          style={{
-            height: "256px",
-            background: "#FFEDE0",
-            padding: "32px",
-          }}
-        >
-          <h3
-            style={{
-              textAlign: "center",
-            }}
-          >
-            Rollney
-          </h3>
-        </footer>
+        <Footer />
       </div>
     </>
   )

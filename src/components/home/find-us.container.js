@@ -3,7 +3,7 @@ import React from "react"
 
 function FindUsContainer() {
   return (
-    <section id="contact-us" style={styles.wrapper}>
+    <section id="find-us" style={styles.wrapper}>
       <div style={{ ...styles.wave.wrapper, top: "0" }}>
         <svg
           style={styles.wave.top.svg}
