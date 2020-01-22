@@ -3,9 +3,9 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import React from "react"
 
-function LocationBanner() {
+function MapBanner() {
   const data = useStaticQuery(graphql`
-    query LocationBannerImage {
+    query MapBannerImage {
       banner: file(relativePath: { eq: "sample-map.png" }) {
         id
         childImageSharp {
@@ -25,7 +25,7 @@ function LocationBanner() {
   )
 }
 
-export default LocationBanner
+export default MapBanner
 
 const styles = {
   wrapper: {

@@ -1,10 +1,10 @@
-import AboutContainer from "../components/home/about.container"
-import AwardsContainer from "../components/home/awards.container"
+import AboutContainer from "../components/home/about/about.container"
 import Banner from "../components/home/banner"
-import Contact from "../components/home/contact"
-import FindUsContainer from "../components/home/find-us.container"
+import ContactUsContainer from "../components/home/contact-us/contact-us.container"
+import FindUsContainer from "../components/home/find-us/find-us.container"
 import Layout from "../components/shared/layout"
-import Menu from "../components/home/menu"
+import OurMenuContainer from "../components/home/our-menu/menu.container"
+import PressAwardsContainer from "../components/home/press-awards/press-awards.container"
 import React from "react"
 import SEO from "../components/shared/seo"
 
@@ -13,10 +13,10 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Banner />
     <AboutContainer />
-    <Menu />
-    <AwardsContainer />
+    <OurMenuContainer />
+    <PressAwardsContainer />
     <FindUsContainer />
-    <Contact />
+    <ContactUsContainer />
   </Layout>
 )
 

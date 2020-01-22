@@ -1,26 +1,25 @@
 import React from "react"
+import TopWave from "./top-wave"
 
-function Menu() {
+function OurMenuContainer() {
   return (
     <section
       id="our-menu"
       style={{
-        height: "600px",
         background: "#eed1b3",
-        padding: "32px",
       }}
     >
+      <TopWave />
       <h2 style={styles.header}>OUR MENU</h2>
+      <div style={styles.content}></div>
     </section>
   )
 }
 
-export default Menu
+export default OurMenuContainer
 
 const styles = {
-  wrapper: {
-    height: "600px",
-    background: "#eed1b3",
+  content: {
     padding: "5%",
   },
   header: {

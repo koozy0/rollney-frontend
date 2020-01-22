@@ -1,32 +1,26 @@
-import Button from "../shared/button"
+import Button from "../../shared/button"
 import React from "react"
-import rollingPinImg from "../../images/rolling-pin.png"
+import flourImg from "../../../images/flour.png"
 
-function WhatsChimney() {
+function AboutRollney() {
   return (
-    <div style={styles.wrapper}>
+    <div id="about-us" style={styles.wrapper}>
       <h3 style={styles.header.base}>
-        <span style={styles.header.cursive}>What's a</span>
-        <span style={styles.header.regular}>Chimney</span>
+        <span style={styles.header.cursive}>About</span>
+        <span style={styles.header.regular}>Rollney</span>
       </h3>
       <div style={styles.imgAside.wrapper}>
-        <img
-          src={rollingPinImg}
-          alt="rrolling pin"
-          style={styles.imgAside.img}
-        />
+        <img src={flourImg} alt="flour" style={styles.imgAside.img} />
       </div>
-      <p style={styles.text}>
-        Known as Kurtoskalacs in Hungarian or Trdelnik in Czech.
-      </p>
-      <Button style={styles.button} to="/what">
+      <p style={styles.text}>Rollney is more than just a dessert.</p>
+      <Button style={styles.button} to="/about">
         Read more
       </Button>
     </div>
   )
 }
 
-export default WhatsChimney
+export default AboutRollney
 
 const styles = {
   wrapper: {
@@ -38,17 +32,18 @@ const styles = {
     base: {
       fontSize: "7vmax",
       fontWeight: "400",
-      textAlign: "right",
     },
     cursive: {
       color: "#fff",
       fontFamily: "DancingScriptRegular",
       display: "block",
+      textAlign: "left",
     },
     regular: {
       color: "#fbbc89",
       fontFamily: "RenogareRegular",
       display: "block",
+      textAlign: "right",
     },
   },
   text: {
@@ -57,6 +52,8 @@ const styles = {
     color: "#fff",
     lineHeight: "1.5",
     fontSize: "calc(1rem + .5vmin)",
+    position: "relative",
+    zIndex: "100",
   },
   button: {
     position: "relative",
@@ -67,10 +64,10 @@ const styles = {
     wrapper: {
       position: "absolute",
       top: "50%",
-      right: "0",
+      left: "0",
       height: "50%",
       width: "50%",
-      transform: "translate(50%, -50%) rotate(15deg)",
+      transform: "translate(-60%, -50%)",
     },
     img: {
       width: "100%",

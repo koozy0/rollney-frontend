@@ -1,7 +1,7 @@
 import PressAwardsBanner from "./press-awards-banner"
 import React from "react"
 
-function AwardsContainer() {
+function PressAwardsContainer() {
   return (
     <section id="press-awards">
       <div style={styles.wave.wrapper}>
@@ -24,7 +24,7 @@ function AwardsContainer() {
   )
 }
 
-export default AwardsContainer
+export default PressAwardsContainer
 
 const styles = {
   header: {

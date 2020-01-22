@@ -1,4 +1,4 @@
-import LocationBanner from "./location-banner"
+import MapBanner from "./map-banner"
 import React from "react"
 
 function FindUsContainer() {
@@ -17,7 +17,7 @@ function FindUsContainer() {
         </svg>
       </div>
       <div style={styles.content}>
-        <LocationBanner />
+        <MapBanner />
       </div>
     </section>
   )

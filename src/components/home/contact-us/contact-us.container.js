@@ -1,6 +1,6 @@
 import React from "react"
 
-function Contact() {
+function ContactUsContainer() {
   return (
     <section id="contact-us" style={styles.wrapper}>
       <h2 style={styles.header}>CONTACT US</h2>
@@ -22,7 +22,7 @@ function Contact() {
   )
 }
 
-export default Contact
+export default ContactUsContainer
 
 const styles = {
   wrapper: {
