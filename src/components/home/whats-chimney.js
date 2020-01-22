@@ -1,5 +1,6 @@
 import Button from "../shared/button"
 import React from "react"
+import rollingPinImg from "../../images/rolling-pin.png"
 
 function WhatsChimney() {
   return (
@@ -8,6 +9,13 @@ function WhatsChimney() {
         <span style={styles.header.cursive}>What's a</span>
         <span style={styles.header.regular}>Chimney</span>
       </h3>
+      <div style={styles.imgAside.wrapper}>
+        <img
+          src={rollingPinImg}
+          alt="rrolling pin"
+          style={styles.imgAside.img}
+        />
+      </div>
       <p style={styles.text}>
         Known as Kurtoskalacs in Hungarian or Trdelnik in Czech.
       </p>
@@ -23,6 +31,8 @@ export default WhatsChimney
 const styles = {
   wrapper: {
     padding: "15%",
+    position: "relative",
+    overflow: "hidden",
   },
   header: {
     base: {
@@ -52,5 +62,19 @@ const styles = {
     position: "relative",
     left: "50%",
     transform: "translateX(-50%)",
+  },
+  imgAside: {
+    wrapper: {
+      position: "absolute",
+      top: "50%",
+      right: "0",
+      height: "50%",
+      width: "50%",
+      transform: "translate(50%, -50%) rotate(15deg)",
+    },
+    img: {
+      width: "100%",
+      height: "auto",
+    },
   },
 }

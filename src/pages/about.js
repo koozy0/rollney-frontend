@@ -1,49 +1,9 @@
-import { graphql, useStaticQuery } from "gatsby"
-
-import Img from "gatsby-image"
+import ImageGrid from "../components/about/image-grid"
 import Layout from "../components/shared/layout"
 import React from "react"
 import SEO from "../components/shared/seo"
 
 const AboutPage = () => {
-  const data = useStaticQuery(graphql`
-    query AboutPageImage {
-      aboutLeft: file(relativePath: { eq: "about-left.jpg" }) {
-        id
-        childImageSharp {
-          fixed(width: 960) {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      aboutTopRight: file(relativePath: { eq: "about-top-right.jpg" }) {
-        id
-        childImageSharp {
-          fixed(width: 960) {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      aboutBottomRight: file(relativePath: { eq: "about-bottom-right.jpg" }) {
-        id
-        childImageSharp {
-          fixed(width: 960) {
-            ...GatsbyImageSharpFixed
-          }
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <Layout>
       <SEO title="About Rollney" />
@@ -66,43 +26,7 @@ const AboutPage = () => {
           </p>
         </div>
       </section>
-      <section style={styles.wrapper}>
-        <div style={styles.imgGrid}>
-          <div
-            style={{
-              gridArea: "left",
-            }}
-          >
-            <Img
-              fluid={data.aboutLeft.childImageSharp.fluid}
-              style={styles.img}
-              fadeIn={true}
-            />
-          </div>
-          <div
-            style={{
-              gridArea: "top-right",
-            }}
-          >
-            <Img
-              fluid={data.aboutTopRight.childImageSharp.fluid}
-              style={styles.img}
-              fadeIn={true}
-            />
-          </div>
-          <div
-            style={{
-              gridArea: "bottom-right",
-            }}
-          >
-            <Img
-              fluid={data.aboutBottomRight.childImageSharp.fluid}
-              style={styles.img}
-              fadeIn={true}
-            />
-          </div>
-        </div>
-      </section>
+      <ImageGrid />
     </Layout>
   )
 }

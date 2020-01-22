@@ -1,12 +1,10 @@
 import AboutRollney from "./about-rollney"
-import Logo from "../shared/logo"
 import React from "react"
 import WhatsChimney from "./whats-chimney"
 
 function AboutContainer() {
   return (
     <section>
-      {/* <Logo style={styles.logo} /> */}
       <div style={styles.grid}>
         <AboutRollney />
         <WhatsChimney />
