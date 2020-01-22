@@ -2,7 +2,19 @@ import { Link } from "gatsby"
 import React from "react"
 
 function NavLink({ to, style, children }) {
-  const internal = /^\/(?!\/)/.test(to)
+  const isInternalLink = /^\/(?!\/)/.test(to)
+
+  const internalLink = (
+    <Link to={to} style={styles.link}>
+      {children}
+    </Link>
+  )
+
+  const externalLink = (
+    <a href={to} style={styles.link}>
+      {children}
+    </a>
+  )
 
   return (
     <button
@@ -11,19 +23,7 @@ function NavLink({ to, style, children }) {
         ...style,
       }}
     >
-      {to ? (
-        internal ? (
-          <Link to={to} style={styles.link}>
-            {children}
-          </Link>
-        ) : (
-          <a href={to} style={styles.link}>
-            {children}
-          </a>
-        )
-      ) : (
-        children
-      )}
+      {to ? (isInternalLink ? internalLink : externalLink) : children}
     </button>
   )
 }
@@ -32,24 +32,24 @@ export default NavLink
 
 const styles = {
   wrapper: {
-    color: `#5f3713`,
-    fontFamily: "MontserratRegular",
-    fontWeight: "400",
-    fontSize: "1rem",
-    minWidth: "64px",
     background: "transparent",
     border: "0",
-    padding: "0 16px",
+    color: `#5f3713`,
+    fontFamily: "MontserratRegular",
+    fontSize: "1rem",
+    fontWeight: "400",
+    minWidth: "64px",
     overflow: "hidden",
-    whiteSpace: "nowrap",
+    padding: "0 16px",
     textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
   },
   link: {
-    textDecoration: "none",
     color: "inherit",
     lineHeight: "2",
     overflow: "hidden",
-    whiteSpace: "nowrap",
+    textDecoration: "none",
     textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
   },
 }
