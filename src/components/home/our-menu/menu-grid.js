@@ -5,13 +5,21 @@ function MenuGrid() {
   return (
     <div style={styles.wrapper}>
       <div style={styles.gridItem}>
-        <MenuGridItem series="KURTOS" />
+        <MenuGridItem series="KURTOS">
+          <p style={styles.text}>FRESHLY BAKED KURTOS TO SERVE YOU DAILY</p>
+        </MenuGridItem>
       </div>
       <div style={styles.gridItem}>
-        <MenuGridItem series="ICE-CREAM" />
+        <MenuGridItem series="ICE-CREAM">
+          <p style={styles.text}>
+            KURTOS TOPPED WITH VANILLA SOFT SERVE THAT WILL MAKE YOUR DAY
+          </p>
+        </MenuGridItem>
       </div>
       <div style={styles.gridItem}>
-        <MenuGridItem series="SAVOURY CONE" />
+        <MenuGridItem series="SAVOURY CONE">
+          <p style={styles.text}>MORE THAN JUST ICE CREAM</p>
+        </MenuGridItem>
       </div>
     </div>
   )
@@ -28,5 +36,11 @@ const styles = {
   },
   gridItem: {
     padding: "5%",
+  },
+  text: {
+    fontFamily: "MontserratRegular",
+    color: "#5f3713",
+    textAlign: "center",
+    padding: "0 10%",
   },
 }
