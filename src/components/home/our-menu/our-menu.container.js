@@ -1,3 +1,4 @@
+import MenuGrid from "./menu-grid"
 import React from "react"
 import TopWave from "./top-wave"
 
@@ -11,7 +12,9 @@ function OurMenuContainer() {
     >
       <TopWave />
       <h2 style={styles.header}>OUR MENU</h2>
-      <div style={styles.content}></div>
+      <div style={styles.content}>
+        <MenuGrid />
+      </div>
     </section>
   )
 }
