@@ -20,7 +20,7 @@ function WhatsChimney() {
         Known as Kurtoskalacs in Hungarian or Trdelnik in Czech.
       </p>
       <Button style={styles.button} to="/what">
-        Read more
+        READ MORE
       </Button>
     </div>
   )

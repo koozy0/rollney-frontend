@@ -7,34 +7,19 @@ function MenuGrid() {
       <div style={styles.gridContainer}>
         <div style={styles.gridItem}>
           <GridItem series="KURTOS">
-            <p style={styles.text}>
-              What this shows us is that we don’t have to write a million media
-              queries to change the number of columns in a grid. Andy also
-              proves that CSS Grid can automate so much of the tedious work of
-              styling layouts.
-            </p>
+            <p style={styles.text}>FRESHLY BAKED KURTOS TO SERVE YOU DAILY</p>
           </GridItem>
         </div>
         <div style={styles.gridItem}>
           <GridItem series="ICE-CREAM">
             <p style={styles.text}>
-              What this shows us is that we don’t have to write a million media
-              queries to change the number of columns in a grid. Andy also
-              proves that CSS Grid can automate so much of the tedious work of
-              styling layouts.
+              KURTOS TOPPED WITH VANILLA SOFT SERVE THAT WILL MAKE YOUR DAY
             </p>
           </GridItem>
         </div>
-        <div style={styles.gridItem}>
-          <GridItem series="SAVOURY CONE">
-            <p style={styles.text}>
-              What this shows us is that we don’t have to write a million media
-              queries to change the number of columns in a grid. Andy also
-              proves that CSS Grid can automate so much of the tedious work of
-              styling layouts.
-            </p>
-          </GridItem>
-        </div>
+        <GridItem series="SAVOURY CONE">
+          <p style={styles.text}>MORE THAN JUST ICE CREAM</p>
+        </GridItem>
       </div>
     </div>
   )
@@ -57,5 +42,6 @@ const styles = {
     fontFamily: "MontserratRegular",
     color: "#5f3713",
     fontSize: "1rem",
+    textAlign: "center",
   },
 }

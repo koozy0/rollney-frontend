@@ -14,7 +14,7 @@ function AboutRollney() {
       </div>
       <p style={styles.text}>Rollney is more than just a dessert.</p>
       <Button style={styles.button} to="/about">
-        Read more
+        READ MORE
       </Button>
     </div>
   )

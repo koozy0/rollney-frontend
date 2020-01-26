@@ -1,6 +1,7 @@
 import MenuGrid from "./menu-grid"
 import React from "react"
 import TopWave from "./top-wave"
+import Button from "../../shared/button"
 
 function OurMenuContainer() {
   return (
@@ -14,6 +15,9 @@ function OurMenuContainer() {
       <h2 style={styles.header}>OUR MENU</h2>
       <div style={styles.content}>
         <MenuGrid />
+        <Button style={styles.button} to="/menu">
+          LEARN MORE
+        </Button>
       </div>
     </section>
   )
@@ -30,5 +34,10 @@ const styles = {
     color: "#fff",
     fontFamily: "MontserratRegular",
     fontSize: "4vmin",
+  },
+  button: {
+    position: "relative",
+    left: "50%",
+    transform: "translateX(-50%)",
   },
 }
