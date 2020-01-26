@@ -51,7 +51,7 @@ const styles = {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
     gridAutoFlow: "dense",
-    gridGap: "1rem",
+    gridGap: "2rem",
   },
   text: {
     fontFamily: "MontserratRegular",

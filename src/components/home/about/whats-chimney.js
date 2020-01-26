@@ -30,15 +30,15 @@ export default WhatsChimney
 
 const styles = {
   wrapper: {
-    padding: "15%",
+    padding: "15% 5%",
     position: "relative",
     overflow: "hidden",
   },
   header: {
     base: {
-      fontSize: "5rem",
+      fontSize: "3rem",
       fontWeight: "400",
-      maxWidth: "480px",
+      maxWidth: "280px",
       marginTop: "0",
       marginLeft: "auto",
       marginRight: "auto",
@@ -62,7 +62,7 @@ const styles = {
     fontFamily: "MontserratRegular",
     color: "#fff",
     lineHeight: "1.5",
-    fontSize: "calc(1rem + .5vmin)",
+    fontSize: "1rem",
   },
   button: {
     position: "relative",
