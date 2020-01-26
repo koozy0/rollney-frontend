@@ -30,7 +30,9 @@ export default MenuGrid
 const styles = {
   wrapper: {
     maxWidth: "960px",
-    margin: "0 auto",
+    marginLeft: "auto",
+    marginRight: "auto",
+    marginBottom: "2rem",
   },
   gridContainer: {
     display: "grid",

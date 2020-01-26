@@ -2,14 +2,18 @@ import Layout from "../components/shared/layout"
 import React from "react"
 import SEO from "../components/shared/seo"
 import Series from "../components/menu/series"
-import Items from "../components/menu/items"
+import KurtosItems from "../components/menu/kurtos-items"
+import IceCreamItems from "../components/menu/ice-cream-items"
+import SavouryItems from "../components/menu/savoury-items"
 
 const MenuPage = () => (
   <Layout>
     <SEO title="Our Menu" />
     <div>
       <Series />
-      <Items />
+      <KurtosItems />
+      <IceCreamItems />
+      <SavouryItems />
     </div>
   </Layout>
 )
