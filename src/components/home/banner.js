@@ -21,8 +21,12 @@ function Banner() {
     <section style={styles.wrapper}>
       <Img fluid={data.image.childImageSharp.fluid} fadeIn={true} />
       <div style={styles.overlay}>
-        <p style={styles.overlayText}>MALAYSIA 1st ORIGINAL CHIMNEY CAKE</p>
-        <p style={styles.overlayText}>THE FINEST KÜRTÖSKALÁCS</p>
+        <h1 className="banner-text" style={styles.overlayText}>
+          MALAYSIA 1st ORIGINAL CHIMNEY CAKE
+        </h1>
+        <h1 className="banner-text" style={styles.overlayText}>
+          THE FINEST KÜRTÖSKALÁCS
+        </h1>
       </div>
     </section>
   )
@@ -52,7 +56,6 @@ const styles = {
     color: "#fff",
     fontFamily: "MontserratRegular",
     textAlign: "center",
-    fontSize: "2rem",
     fontWeight: "600",
     lineHeight: "1.5",
   },

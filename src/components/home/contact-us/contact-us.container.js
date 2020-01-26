@@ -9,7 +9,7 @@ function ContactUsContainer() {
         <p>We would love to hear from you</p>
         <p>
           Media, marketing queries, business opportunities:{" "}
-          <a href="rollneymalaysia@gmail.com" style={styles.link}>
+          <a href="mailto:rollneymalaysia@gmail.com" style={styles.link}>
             rollneymalaysia@gmail.com
           </a>
         </p>
@@ -40,15 +40,13 @@ const styles = {
     textAlign: "center",
     color: "#fff",
     fontFamily: "MontserratRegular",
-    fontSize: "4vmin",
-    marginBottom: "8vmin",
+    fontSize: "2rem",
   },
   text: {
     textAlign: "center",
     fontFamily: "MontserratRegular",
     color: "#fff",
     lineHeight: "1.5",
-    fontSize: "calc(1rem + .5vmin)",
   },
   link: {
     color: "#fff",

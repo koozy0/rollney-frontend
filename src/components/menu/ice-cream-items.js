@@ -2,7 +2,7 @@ import React from "react"
 
 function IceCreamItems() {
   return (
-    <section style={styles.wrapper}>
+    <section style={styles.wrapper} id="ice-cream">
       <h2 style={styles.header}>
         KURTOS TOPPED WITH VANILLA SOFT SERVE THAT MAKE YOUR DAY
       </h2>
@@ -30,6 +30,7 @@ const styles = {
     textAlign: "center",
     padding: "0 16px",
     marginBottom: "2rem",
+    color: "#5f3713",
   },
   gridContainer: {
     display: "grid",

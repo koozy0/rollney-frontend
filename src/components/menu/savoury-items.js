@@ -2,7 +2,7 @@ import React from "react"
 
 function SavouryItems() {
   return (
-    <section style={styles.wrapper}>
+    <section style={styles.wrapper} id="savoury">
       <h2 style={styles.header}>MORE THAN JUST ICE CREAM</h2>
 
       <div style={styles.gridContainer}>
@@ -28,6 +28,7 @@ const styles = {
     textAlign: "center",
     padding: "0 16px",
     marginBottom: "2rem",
+    color: "#5f3713",
   },
   gridContainer: {
     display: "grid",

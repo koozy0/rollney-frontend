@@ -62,7 +62,6 @@ const styles = {
     fontFamily: "MontserratRegular",
     color: "#fff",
     lineHeight: "1.5",
-    fontSize: "1rem",
   },
   button: {
     position: "relative",

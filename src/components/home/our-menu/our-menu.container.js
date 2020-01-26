@@ -33,7 +33,7 @@ const styles = {
     textAlign: "center",
     color: "#fff",
     fontFamily: "MontserratRegular",
-    fontSize: "4vmin",
+    fontSize: "2rem",
   },
   button: {
     position: "relative",
