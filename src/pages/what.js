@@ -31,7 +31,7 @@ const WhatPage = () => {
             <span style={styles.header.cursive}>What's a</span>
             <span style={styles.header.regular}>Chimney</span>
           </h3>
-          <p style={styles.text}>
+          <p>
             Known as Kürtöskalács in Hungarian chimney cake are unique
             bread-like freshly baked Hungarian pastries, named after their
             hollow cylindrical shape. They have a satisfying crunch on the
@@ -73,24 +73,25 @@ const styles = {
   },
   header: {
     base: {
-      fontSize: "calc(2rem + 4vmin)",
+      fontSize: "3rem",
       fontWeight: "400",
-      padding: "0 10%",
-      textAlign: "right",
+      maxWidth: "280px",
+      marginTop: "0",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "1rem",
     },
     cursive: {
       color: "#fff",
       fontFamily: "DancingScriptRegular",
       display: "block",
+      textAlign: "right",
     },
     regular: {
       color: "#fbbc89",
       fontFamily: "RenogareRegular",
       display: "block",
+      textAlign: "right",
     },
-  },
-  text: {
-    lineHeight: "1.5",
-    fontSize: "calc(1rem + .5vmin)",
   },
 }

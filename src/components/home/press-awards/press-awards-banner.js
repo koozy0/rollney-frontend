@@ -37,7 +37,7 @@ function PressAwardsBanner() {
     <div style={styles.wrapper}>
       <div style={styles.overlay}>
         <div style={styles.captionGroup}>
-          <p style={styles.caption}>Highly Recommended By</p>
+          <p>Highly Recommended By</p>
           <div style={styles.grid}>
             <Img fluid={data.tv3.childImageSharp.fluid} fadeIn={true} />
             <Img fluid={data.tv2.childImageSharp.fluid} fadeIn={true} />
@@ -75,9 +75,6 @@ const styles = {
     left: "50%",
     transform: "translate(-50%, -50%)",
     fontSize: "4vmin",
-  },
-  caption: {
-    marginBottom: "8vmin",
   },
   logo: {
     tv2: {

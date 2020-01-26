@@ -20,7 +20,14 @@ html {
   format: ("woff");
 }
 
-/* Hide nav links for non desktop devices */
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
 .nav-link {
   display: none;
 }

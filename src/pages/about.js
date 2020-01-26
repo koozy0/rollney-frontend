@@ -13,14 +13,14 @@ const AboutPage = () => {
             <span style={styles.header.cursive}>About</span>
             <span style={styles.header.regular}>Rollney</span>
           </h1>
-          <p style={styles.text}>
+          <p>
             <strong>Rollney</strong> took hours to make every single
             Kürtöskalács to birng the best and traditional Kürtöskalács in town.
             With our open rotiserrie grill, Hungarian heritage and traditional
             baking methods and we are proud to bring Kürtöskalács, the delicious
             and unique treat fresh from Hungary to Malaysia.
           </p>
-          <p style={styles.text}>
+          <p>
             Rollney is more than just a dessert, we spread happiness and
             committed to bring the finest Kürtöskalács to you.
           </p>
@@ -53,9 +53,13 @@ const styles = {
   img: { height: "100%" },
   header: {
     base: {
-      fontSize: "calc(2rem + 4vmin)",
+      fontSize: "3rem",
       fontWeight: "400",
-      padding: "0 10%",
+      maxWidth: "280px",
+      marginTop: "0",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "1rem",
     },
     cursive: {
       color: "#fff",
@@ -69,9 +73,5 @@ const styles = {
       display: "block",
       textAlign: "right",
     },
-  },
-  text: {
-    lineHeight: "1.5",
-    fontSize: "calc(1rem + .5vmin)",
   },
 }
