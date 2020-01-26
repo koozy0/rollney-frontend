@@ -19,3 +19,15 @@ html {
   src: url("../../static/fonts/MontserratRegular.woff");
   format: ("woff");
 }
+
+/* Hide nav links for non desktop devices */
+.nav-link {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .nav-link {
+    display: initial;
+  }
+}

@@ -8,7 +8,10 @@ const Header = () => (
     <div style={styles.header}>
       <NavLink to="/#our-menu">OUR MENU</NavLink>
       <NavLink to="/#press-awards">PRESS/AWARDS</NavLink>
-      <NavLink to="/" style={{ overflow: "unset", minWidth: "unset" }}>
+      <NavLink
+        to="/"
+        style={{ overflow: "unset", minWidth: "unset", display: "initial" }}
+      >
         <Logo />
       </NavLink>
       <NavLink to="/#find-us">FIND US</NavLink>

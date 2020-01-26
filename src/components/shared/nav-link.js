@@ -18,6 +18,7 @@ function NavLink({ to, style, children }) {
 
   return (
     <button
+      className="nav-link"
       style={{
         ...styles.wrapper,
         ...style,
