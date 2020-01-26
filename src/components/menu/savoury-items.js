@@ -1,16 +1,36 @@
+import { graphql, useStaticQuery } from "gatsby"
+
 import React from "react"
+import Img from "gatsby-image"
 
 function SavouryItems() {
+  const data = useStaticQuery(graphql`
+    query SavouryImages {
+      images: allFile(filter: { relativeDirectory: { eq: "menu/savoury" } }) {
+        nodes {
+          id
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <section style={styles.wrapper} id="savoury">
       <h2 style={styles.header}>MORE THAN JUST ICE CREAM</h2>
 
       <div style={styles.gridContainer}>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
+        {data.images.nodes.map(image => (
+          <div key={image.id}>
+            <Img fluid={image.childImageSharp.fluid} />
+            <p>{image.name}</p>
+          </div>
+        ))}
       </div>
     </section>
   )

@@ -1,6 +1,25 @@
+import { graphql, useStaticQuery } from "gatsby"
+
 import React from "react"
+import Img from "gatsby-image"
 
 function IceCreamItems() {
+  const data = useStaticQuery(graphql`
+    query IceCreamImages {
+      images: allFile(filter: { relativeDirectory: { eq: "menu/ice-cream" } }) {
+        nodes {
+          id
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <section style={styles.wrapper} id="ice-cream">
       <h2 style={styles.header}>
@@ -8,11 +27,12 @@ function IceCreamItems() {
       </h2>
 
       <div style={styles.gridContainer}>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
+        {data.images.nodes.map(image => (
+          <div key={image.id}>
+            <Img fluid={image.childImageSharp.fluid} />
+            <p>{image.name}</p>
+          </div>
+        ))}
       </div>
     </section>
   )

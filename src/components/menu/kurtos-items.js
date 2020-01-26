@@ -1,16 +1,36 @@
+import { graphql, useStaticQuery } from "gatsby"
+
 import React from "react"
+import Img from "gatsby-image"
 
 function KurtosItems() {
+  const data = useStaticQuery(graphql`
+    query KurtosImages {
+      images: allFile(filter: { relativeDirectory: { eq: "menu/kurtos" } }) {
+        nodes {
+          id
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <section style={styles.wrapper} id="kurtos">
       <h2 style={styles.header}>FRESHLY BAKED KURTOS TO SERVE YOU DAILY</h2>
 
       <div style={styles.gridContainer}>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
-        <div style={styles.gridItem}></div>
+        {data.images.nodes.map(image => (
+          <div key={image.id}>
+            <Img fluid={image.childImageSharp.fluid} />
+            <p>{image.name}</p>
+          </div>
+        ))}
       </div>
     </section>
   )
