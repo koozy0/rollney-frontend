@@ -8,7 +8,7 @@ function MenuGrid() {
   const data = useStaticQuery(graphql`
     query MenuSeriesImage1 {
       kurtos: file(
-        relativePath: { eq: "menu/kurtos/original-cinamon-kurtos.png" }
+        relativePath: { eq: "menu/kurtos/Original Cinnamon Kurtos.png" }
       ) {
         id
         childImageSharp {
@@ -18,7 +18,7 @@ function MenuGrid() {
         }
       }
       iceCream: file(
-        relativePath: { eq: "menu/ice-cream/lotus-crunch-cone.png" }
+        relativePath: { eq: "menu/ice-cream/Lotus Crunch Cone.png" }
       ) {
         id
         childImageSharp {
@@ -28,7 +28,7 @@ function MenuGrid() {
         }
       }
       savoury: file(
-        relativePath: { eq: "menu/savoury/chicken-slice-cheese.png" }
+        relativePath: { eq: "menu/savoury/Chicken Slice and Chicken.png" }
       ) {
         id
         childImageSharp {

@@ -21,16 +21,18 @@ function KurtosItems() {
   `)
 
   return (
-    <section style={styles.wrapper} id="kurtos">
-      <h2 style={styles.header}>FRESHLY BAKED KURTOS TO SERVE YOU DAILY</h2>
+    <section style={styles.section} id="kurtos">
+      <div style={styles.wrapper}>
+        <h2 style={styles.header}>FRESHLY BAKED KURTOS TO SERVE YOU DAILY</h2>
 
-      <div style={styles.gridContainer}>
-        {data.images.nodes.map(image => (
-          <div key={image.id}>
-            <Img fluid={image.childImageSharp.fluid} />
-            <p>{image.name}</p>
-          </div>
-        ))}
+        <div style={styles.gridContainer}>
+          {data.images.nodes.map(image => (
+            <div key={image.id}>
+              <Img fluid={image.childImageSharp.fluid} />
+              <p style={styles.text}>{image.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
@@ -39,9 +41,13 @@ function KurtosItems() {
 export default KurtosItems
 
 const styles = {
-  wrapper: {
+  section: {
     background: "#eed1b3",
-    padding: "10% 0",
+    padding: "2rem",
+  },
+  wrapper: {
+    maxWidth: "960px",
+    margin: "0 auto",
   },
   header: {
     fontFamily: "MontserratRegular",
@@ -57,9 +63,17 @@ const styles = {
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
     gridAutoFlow: "dense",
     gridGap: "2rem",
+    padding: "1rem",
   },
   gridItem: {
     minHeight: "280px",
     background: "#ccc",
+  },
+  text: {
+    textAlign: "center",
+    fontFamily: "MontserratRegular",
+    color: "#fff",
+    fontSize: "1.2rem",
+    fontWeight: "600",
   },
 }
