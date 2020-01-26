@@ -21,8 +21,8 @@ function Banner() {
     <section style={styles.wrapper}>
       <Img fluid={data.image.childImageSharp.fluid} fadeIn={true} />
       <div style={styles.overlay}>
-        <p>MALAYSIA 1st ORIGINAL CHIMNEY CAKE</p>
-        <p>THE FINEST KÜRTÖSKALÁCS</p>
+        <p style={styles.overlayText}>MALAYSIA 1st ORIGINAL CHIMNEY CAKE</p>
+        <p style={styles.overlayText}>THE FINEST KÜRTÖSKALÁCS</p>
       </div>
     </section>
   )
@@ -43,14 +43,17 @@ const styles = {
     bottom: "0",
     right: "0",
     background: "rgba(0,0,0,.7)",
-    color: "#fff",
-    fontFamily: "MontserratRegular",
     display: "flex",
-    textAlign: "center",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    fontSize: "4vmin",
+  },
+  overlayText: {
+    color: "#fff",
+    fontFamily: "MontserratRegular",
+    textAlign: "center",
+    fontSize: "2rem",
     fontWeight: "600",
+    lineHeight: "1.5",
   },
 }

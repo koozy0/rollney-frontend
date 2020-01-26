@@ -1,4 +1,5 @@
 import React from "react"
+import contactUsBg from "../../../images/contact-us-background.png"
 
 function ContactUsContainer() {
   return (

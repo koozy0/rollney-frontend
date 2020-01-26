@@ -36,19 +36,25 @@ const styles = {
   },
   header: {
     base: {
-      fontSize: "7vmax",
+      fontSize: "5rem",
       fontWeight: "400",
-      textAlign: "right",
+      maxWidth: "480px",
+      marginTop: "0",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "1rem",
     },
     cursive: {
       color: "#fff",
       fontFamily: "DancingScriptRegular",
       display: "block",
+      textAlign: "right",
     },
     regular: {
       color: "#fbbc89",
       fontFamily: "RenogareRegular",
       display: "block",
+      textAlign: "right",
     },
   },
   text: {

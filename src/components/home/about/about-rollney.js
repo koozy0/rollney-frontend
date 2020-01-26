@@ -30,8 +30,13 @@ const styles = {
   },
   header: {
     base: {
-      fontSize: "7vmax",
+      fontSize: "5rem",
       fontWeight: "400",
+      maxWidth: "480px",
+      marginTop: "0",
+      marginLeft: "auto",
+      marginRight: "auto",
+      marginBottom: "1rem",
     },
     cursive: {
       color: "#fff",

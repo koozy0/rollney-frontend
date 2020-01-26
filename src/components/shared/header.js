@@ -5,17 +5,7 @@ import React from "react"
 
 const Header = () => (
   <header style={styles.wrapper}>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `0 1.0875rem`,
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100%",
-      }}
-    >
+    <div style={styles.header}>
       <NavLink to="/#our-menu">OUR MENU</NavLink>
       <NavLink to="/#press-awards">PRESS/AWARDS</NavLink>
       <NavLink to="/" style={{ overflow: "unset", minWidth: "unset" }}>
@@ -44,5 +34,14 @@ const styles = {
     top: "0",
     zIndex: "1000",
     minHeight: "64px",
+  },
+  header: {
+    margin: `0 auto`,
+    maxWidth: 960,
+    padding: `0 1.0875rem`,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100%",
   },
 }
