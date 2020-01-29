@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-import React from "react"
-import Img from "gatsby-image"
-import GridItem from "../shared/grid-item"
 import Button from "../shared/button"
+import GridItem from "../shared/grid-item"
+import Img from "gatsby-image"
+import React from "react"
 
 function Series() {
   const data = useStaticQuery(graphql`
@@ -29,7 +29,7 @@ function Series() {
         }
       }
       savoury: file(
-        relativePath: { eq: "menu/savoury/Chicken Slice and Chicken.png" }
+        relativePath: { eq: "menu/savoury/Chicken Slice and Cheese.png" }
       ) {
         id
         childImageSharp {
