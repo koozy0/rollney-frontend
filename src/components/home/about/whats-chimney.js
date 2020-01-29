@@ -62,6 +62,8 @@ const styles = {
     fontFamily: "MontserratRegular",
     color: "#fff",
     lineHeight: "1.5",
+    position: "relative",
+    zIndex: "100",
   },
   button: {
     position: "relative",
