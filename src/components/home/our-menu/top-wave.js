@@ -25,7 +25,6 @@ const styles = {
       position: "relative",
       overflow: "hidden",
       height: "12vmax",
-      bacground: "#d8b49c",
     },
     svg: {
       width: "100%",

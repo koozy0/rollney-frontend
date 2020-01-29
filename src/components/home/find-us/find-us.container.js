@@ -1,4 +1,4 @@
-import MapBanner from "./map-banner"
+import OutletInfoGrid from "./outlet-info-grid"
 import React from "react"
 
 function FindUsContainer() {
@@ -17,7 +17,8 @@ function FindUsContainer() {
         </svg>
       </div>
       <div style={styles.content}>
-        <MapBanner />
+        <h1 style={styles.header}>FIND US</h1>
+        <OutletInfoGrid />
       </div>
     </section>
   )
@@ -33,10 +34,9 @@ const styles = {
     wrapper: {
       height: "12vmax",
       overflow: "hidden",
-      position: "absolute",
+      position: "relative",
       width: "100%",
-      top: "0",
-      zIndex: "100",
+      background: "#d8b49c",
     },
     top: {
       svg: {
@@ -49,5 +49,13 @@ const styles = {
       },
     },
   },
-  content: {},
+  header: {
+    textAlign: "center",
+    color: "#fff",
+    fontFamily: "MontserratRegular",
+    fontSize: "2rem",
+  },
+  content: {
+    background: "#d8b49c",
+  },
 }
