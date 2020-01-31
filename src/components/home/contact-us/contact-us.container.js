@@ -4,10 +4,11 @@ import contactUsBg from "../../../images/contact-us-background.png"
 function ContactUsContainer() {
   return (
     <section id="contact-us" style={styles.wrapper}>
+      <div style={styles.spacer}></div>
       <h1 className="heading" style={styles.header}>
         CONTACT US
       </h1>
-      <div style={styles.text}>
+      <div style={styles.content}>
         <p className="text">We would love to hear from you</p>
         <p className="text">
           Media, marketing queries, business opportunities:{" "}
@@ -29,18 +30,19 @@ export default ContactUsContainer
 
 const styles = {
   wrapper: {
-    padding: "5%",
     background: "linear-gradient(to right, #e2ccb4 50%, #cdb29f 50%)",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    display: "grid",
+    placeItems: "center",
+  },
+  spacer: {
+    height: "12vmax",
   },
   header: {
     textAlign: "center",
     color: "#fff",
   },
-  text: {
+  content: {
+    padding: "5%",
     textAlign: "center",
     color: "#fff",
   },

@@ -16,10 +16,10 @@ function FindUsContainer() {
           />
         </svg>
       </div>
+      <h1 className="heading" style={styles.header}>
+        FIND US
+      </h1>
       <div style={styles.content}>
-        <h1 className="heading" style={styles.header}>
-          FIND US
-        </h1>
         <OutletInfoGrid />
       </div>
     </section>
@@ -58,5 +58,6 @@ const styles = {
   },
   content: {
     background: "#d8b49c",
+    padding: "5%",
   },
 }
