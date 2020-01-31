@@ -36,6 +36,7 @@ export default Banner
 const styles = {
   wrapper: {
     position: "relative",
+    maxHeight: "50vh",
   },
   overlay: {
     position: "absolute",

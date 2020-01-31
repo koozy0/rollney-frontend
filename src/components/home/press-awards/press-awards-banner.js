@@ -54,6 +54,7 @@ export default PressAwardsBanner
 const styles = {
   wrapper: {
     position: "relative",
+    maxHeight: "50vh",
   },
   overlay: {
     position: "absolute",
