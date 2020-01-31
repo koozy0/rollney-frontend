@@ -21,6 +21,7 @@ function ContactUsContainer() {
           You can also connect with the Rollney Malaysia team on Facebook and
           Instagram
         </p>
+        <div style={styles.spacer}></div>
       </div>
     </section>
   )
@@ -42,7 +43,7 @@ const styles = {
     color: "#fff",
   },
   content: {
-    padding: "5%",
+    padding: "1rem",
     textAlign: "center",
     color: "#fff",
   },

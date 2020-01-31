@@ -58,6 +58,6 @@ const styles = {
   },
   content: {
     background: "#d8b49c",
-    padding: "5%",
+    padding: "1rem",
   },
 }

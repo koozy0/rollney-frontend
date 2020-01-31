@@ -29,7 +29,7 @@ export default OurMenuContainer
 
 const styles = {
   content: {
-    padding: "5%",
+    padding: "1rem",
   },
   header: {
     textAlign: "center",
