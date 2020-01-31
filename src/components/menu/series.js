@@ -1,16 +1,14 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-import Button from "../shared/button"
 import GridItem from "../shared/grid-item"
 import Img from "gatsby-image"
+import NavLink from "../shared/nav-link"
 import React from "react"
 
 function Series() {
   const data = useStaticQuery(graphql`
     query MenuSeriesImage2 {
-      kurtos: file(
-        relativePath: { eq: "menu/kurtos/Original Cinnamon Kurtos.png" }
-      ) {
+      kurtos: file(relativePath: { eq: "menu/series/kurtos.png" }) {
         id
         childImageSharp {
           fluid(quality: 100) {
@@ -18,9 +16,7 @@ function Series() {
           }
         }
       }
-      iceCream: file(
-        relativePath: { eq: "menu/ice-cream/Lotus Crunch Cone.png" }
-      ) {
+      iceCream: file(relativePath: { eq: "menu/series/ice-cream.png" }) {
         id
         childImageSharp {
           fluid(quality: 100) {
@@ -28,9 +24,7 @@ function Series() {
           }
         }
       }
-      savoury: file(
-        relativePath: { eq: "menu/savoury/Chicken Slice and Cheese.png" }
-      ) {
+      savoury: file(relativePath: { eq: "menu/series/savoury.png" }) {
         id
         childImageSharp {
           fluid(quality: 100) {
@@ -45,32 +39,26 @@ function Series() {
     <section style={styles.section}>
       <div style={styles.wrapper}>
         <div style={styles.gridContainer}>
-          <GridItem
-            series="KURTOS"
-            image={<Img fluid={data.kurtos.childImageSharp.fluid} />}
-          >
-            <Button style={styles.button} to="/menu/#kurtos">
-              SEE MORE
-            </Button>
-          </GridItem>
+          <NavLink to="/menu/#kurtos" style={{ padding: "0" }}>
+            <GridItem
+              series="KURTOS"
+              image={<Img fluid={data.kurtos.childImageSharp.fluid} />}
+            />
+          </NavLink>
 
-          <GridItem
-            series="ICE-CREAM"
-            image={<Img fluid={data.iceCream.childImageSharp.fluid} />}
-          >
-            <Button style={styles.button} to="/menu/#ice-cream">
-              SEE MORE
-            </Button>
-          </GridItem>
+          <NavLink to="/menu/#ice-cream" style={{ padding: "0" }}>
+            <GridItem
+              series="ICE-CREAM"
+              image={<Img fluid={data.iceCream.childImageSharp.fluid} />}
+            />
+          </NavLink>
 
-          <GridItem
-            series="SAVOURY CONE"
-            image={<Img fluid={data.savoury.childImageSharp.fluid} />}
-          >
-            <Button style={styles.button} to="/menu/#savoury">
-              SEE MORE
-            </Button>
-          </GridItem>
+          <NavLink to="/menu/#savoury" style={{ padding: "0" }}>
+            <GridItem
+              series="SAVOURY CONE"
+              image={<Img fluid={data.savoury.childImageSharp.fluid} />}
+            />
+          </NavLink>
         </div>
       </div>
     </section>

@@ -20,9 +20,9 @@ function Logo({ style }) {
   return (
     <div
       style={{
-        ...styles.wrapper,
         ...style,
       }}
+      className="brand__logo"
     >
       <Img fluid={data.img.childImageSharp.fluid} fadeIn={true} />
     </div>
@@ -30,9 +30,3 @@ function Logo({ style }) {
 }
 
 export default Logo
-
-const styles = {
-  wrapper: {
-    width: "128px",
-  },
-}

@@ -4,13 +4,12 @@ function GridItem({ series, image, children }) {
   return (
     <div>
       <div style={{ position: "relative" }}>
-        <div style={styles.imgWrapper}>{image}</div>
-        <svg viewBox="0 0 100 120" style={styles.svg}>
+        <svg viewBox="0 0 100 25">
           <path
             id="myCurve"
             fill="none"
             stroke="none"
-            d="M10 35 A50 50, 0, 0 1, 90 35"
+            d="M10 25 A50 50, 0, 0 1, 90 25"
           />
 
           <text style={styles.svgText}>
@@ -23,8 +22,8 @@ function GridItem({ series, image, children }) {
               {series} SERIES
             </textPath>
           </text>
-          <circle cx="50" cy="70" r="50" fill="#c69c6c" />
         </svg>
+        <div style={styles.imgWrapper}>{image}</div>
       </div>
       {children}
     </div>
@@ -35,18 +34,9 @@ export default GridItem
 
 const styles = {
   imgWrapper: {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    overflow: "hidden",
     width: "100%",
-    height: "100%",
-    maxWidth: "200px",
-    maxHeight: "200px",
-  },
-  svg: {
-    marginBottom: "1rem",
+    height: "auto",
+    transform: "translateY(-2rem)",
   },
   svgText: {
     fontFamily: "MontserratRegular",

@@ -7,9 +7,7 @@ import React from "react"
 function MenuGrid() {
   const data = useStaticQuery(graphql`
     query MenuSeriesImage1 {
-      kurtos: file(
-        relativePath: { eq: "menu/kurtos/Original Cinnamon Kurtos.png" }
-      ) {
+      kurtos: file(relativePath: { eq: "menu/series/kurtos.png" }) {
         id
         childImageSharp {
           fluid(quality: 100) {
@@ -17,9 +15,7 @@ function MenuGrid() {
           }
         }
       }
-      iceCream: file(
-        relativePath: { eq: "menu/ice-cream/Lotus Crunch Cone.png" }
-      ) {
+      iceCream: file(relativePath: { eq: "menu/series/ice-cream.png" }) {
         id
         childImageSharp {
           fluid(quality: 100) {
@@ -27,9 +23,7 @@ function MenuGrid() {
           }
         }
       }
-      savoury: file(
-        relativePath: { eq: "menu/savoury/Chicken Slice and Cheese.png" }
-      ) {
+      savoury: file(relativePath: { eq: "menu/series/savoury.png" }) {
         id
         childImageSharp {
           fluid(quality: 100) {

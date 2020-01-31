@@ -40,6 +40,10 @@ p {
   font-size: 1rem;
 }
 
+.brand__logo {
+  width: 64px;
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .nav-link {
@@ -48,5 +52,9 @@ p {
 
   .banner-text {
     font-size: 2rem;
+  }
+
+  .brand__logo {
+    width: 128px;
   }
 }
