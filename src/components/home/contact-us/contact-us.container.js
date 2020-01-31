@@ -4,17 +4,19 @@ import contactUsBg from "../../../images/contact-us-background.png"
 function ContactUsContainer() {
   return (
     <section id="contact-us" style={styles.wrapper}>
-      <h2 style={styles.header}>CONTACT US</h2>
+      <h1 className="heading" style={styles.header}>
+        CONTACT US
+      </h1>
       <div style={styles.text}>
-        <p>We would love to hear from you</p>
-        <p>
+        <p className="text">We would love to hear from you</p>
+        <p className="text">
           Media, marketing queries, business opportunities:{" "}
           <a href="mailto:rollneymalaysia@gmail.com" style={styles.link}>
             rollneymalaysia@gmail.com
           </a>
         </p>
-        <p>TEL /XXXXXXXXX</p>
-        <p>
+        <p className="text">TEL /XXXXXXXXX</p>
+        <p className="text">
           You can also connect with the Rollney Malaysia team on Facebook and
           Instagram
         </p>
@@ -27,10 +29,8 @@ export default ContactUsContainer
 
 const styles = {
   wrapper: {
-    minHeight: "70vh",
-    background: "#F4C9AB",
     padding: "5%",
-    backgroundImage: "linear-gradient(to right, #e2ccb4 50%, #cdb29f 50%)",
+    background: "linear-gradient(to right, #e2ccb4 50%, #cdb29f 50%)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -39,14 +39,10 @@ const styles = {
   header: {
     textAlign: "center",
     color: "#fff",
-    fontFamily: "MontserratRegular",
-    fontSize: "2rem",
   },
   text: {
     textAlign: "center",
-    fontFamily: "MontserratRegular",
     color: "#fff",
-    lineHeight: "1.5",
   },
   link: {
     color: "#fff",

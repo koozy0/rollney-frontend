@@ -16,7 +16,7 @@ function WhatsChimney() {
           style={styles.imgAside.img}
         />
       </div>
-      <p style={styles.text}>
+      <p className="text" style={styles.text}>
         Known as Kurtoskalacs in Hungarian or Trdelnik in Czech.
       </p>
       <Button style={styles.button} to="/what">
@@ -59,9 +59,7 @@ const styles = {
   },
   text: {
     textAlign: "center",
-    fontFamily: "MontserratRegular",
     color: "#fff",
-    lineHeight: "1.5",
     position: "relative",
     zIndex: "100",
   },

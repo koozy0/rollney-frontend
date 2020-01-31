@@ -8,13 +8,20 @@ function Footer() {
     <footer style={styles.wrapper}>
       <Logo />
       <p style={styles.copyright}>
-        COPYRIGHT ROLLNEY MALAYSIA, ALL RIGHT RESERVED &copy; 2019
+        copyright Rollney Malaysia, all right reserved &copy; 2019
       </p>
       <div style={styles.social}>
-        <span>rollneymalaysia</span>
-        <img src={instagramLogo} alt="Instagram logo" style={styles.logo} />
-        <img src={facebookLogo} alt="Facebook logo" style={styles.logo} />
-        <span>Rollney Malaysia</span>
+        <a
+          href="https://www.instagram.com/rollneymalaysia/"
+          style={styles.link}
+        >
+          <span>rollneymalaysia</span>
+          <img src={instagramLogo} alt="Instagram logo" style={styles.logo} />
+        </a>
+        <a href="https://www.facebook.com/rollneymalaysia/" style={styles.link}>
+          <img src={facebookLogo} alt="Facebook logo" style={styles.logo} />
+          <span>Rollney Malaysia</span>
+        </a>
       </div>
     </footer>
   )
@@ -34,19 +41,28 @@ const styles = {
   copyright: {
     fontFamily: "MontserratRegular",
     fontWeight: "600",
-    fontSize: ".5rem",
+    fontSize: ".6rem",
+    color: "#5f3713",
+    textAlign: "center",
+    textTransform: "uppercase",
   },
   social: {
     fontFamily: "MontserratRegular",
-    fontSize: ".5rem",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: "2rem",
+    fontSize: ".6rem",
+    display: "grid",
+    placeItems: "center",
+    gridTemplateColumns: "1fr 1fr",
+    marginBottom: "1.45rem",
   },
   logo: {
     height: "36px",
     width: "36px",
     margin: "0 18px",
+  },
+  link: {
+    display: "grid",
+    placeItems: "center",
+    gridTemplateColumns: "1fr 1fr",
+    color: "#5f3713",
   },
 }

@@ -18,14 +18,13 @@ function Banner() {
   `)
 
   return (
-    <section style={styles.wrapper}>
+    <section style={styles.wrapper} id="hero">
       <Img fluid={data.image.childImageSharp.fluid} fadeIn={true} />
       <div style={styles.overlay}>
-        <h1 className="banner-text" style={styles.overlayText}>
-          MALAYSIA 1st ORIGINAL CHIMNEY CAKE
-        </h1>
-        <h1 className="banner-text" style={styles.overlayText}>
-          THE FINEST KÜRTÖSKALÁCS
+        <h1 className="heading" style={styles.overlayText}>
+          <span>Malaysia 1st original chimney cake</span>
+          <br />
+          <span>The finest kürtöskalács</span>
         </h1>
       </div>
     </section>
@@ -47,16 +46,14 @@ const styles = {
     bottom: "0",
     right: "0",
     background: "rgba(0,0,0,.7)",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+    display: "grid",
+    placeItems: "center",
+    padding: "1rem",
   },
   overlayText: {
     color: "#fff",
-    fontFamily: "MontserratRegular",
     textAlign: "center",
     fontWeight: "600",
-    lineHeight: "1.5",
+    textTransform: "uppercase",
   },
 }

@@ -42,7 +42,9 @@ function MenuGrid() {
             series="KURTOS"
             image={<Img fluid={data.kurtos.childImageSharp.fluid} />}
           >
-            <p style={styles.text}>FRESHLY BAKED KURTOS TO SERVE YOU DAILY</p>
+            <p className="text" style={styles.text}>
+              Freshly baked kurtos to serve you daily
+            </p>
           </GridItem>
         </div>
         <div style={styles.gridItem}>
@@ -50,8 +52,8 @@ function MenuGrid() {
             series="ICE-CREAM"
             image={<Img fluid={data.iceCream.childImageSharp.fluid} />}
           >
-            <p style={styles.text}>
-              KURTOS TOPPED WITH VANILLA SOFT SERVE THAT WILL MAKE YOUR DAY
+            <p className="text" style={styles.text}>
+              Kurtos topped with vanilla soft serve that will make your day
             </p>
           </GridItem>
         </div>
@@ -59,7 +61,9 @@ function MenuGrid() {
           series="SAVOURY CONE"
           image={<Img fluid={data.savoury.childImageSharp.fluid} />}
         >
-          <p style={styles.text}>MORE THAN JUST ICE CREAM</p>
+          <p className="text" style={styles.text}>
+            More than just ice cream
+          </p>
         </GridItem>
       </div>
     </div>
@@ -85,5 +89,6 @@ const styles = {
     fontFamily: "MontserratRegular",
     color: "#5f3713",
     textAlign: "center",
+    textTransform: "uppercase",
   },
 }

@@ -1,7 +1,7 @@
+import Button from "../../shared/button"
 import MenuGrid from "./menu-grid"
 import React from "react"
 import TopWave from "./top-wave"
-import Button from "../../shared/button"
 
 function OurMenuContainer() {
   return (
@@ -12,7 +12,9 @@ function OurMenuContainer() {
       }}
     >
       <TopWave />
-      <h2 style={styles.header}>OUR MENU</h2>
+      <h1 className="heading" style={styles.header}>
+        OUR MENU
+      </h1>
       <div style={styles.content}>
         <MenuGrid />
         <Button style={styles.button} to="/menu">
@@ -32,8 +34,6 @@ const styles = {
   header: {
     textAlign: "center",
     color: "#fff",
-    fontFamily: "MontserratRegular",
-    fontSize: "2rem",
   },
   button: {
     position: "relative",

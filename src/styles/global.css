@@ -20,32 +20,57 @@ html {
   format: ("woff");
 }
 
-/* Base Styles */
-* {
+/* Mobile layout styles */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.5;
-}
-
-.nav-link {
-  display: none;
-}
-
-.banner-text {
-  font-size: 1rem;
+  line-height: 1.5 !important;
 }
 
 p {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 1.25rem;
+  font-family: "MontserratRegular";
+  margin: 1rem 0;
+}
+
+.text {
+  font-size: 0.9rem;
+  font-family: "MontserratRegular";
+}
+
+.nav-link {
+  display: none;
+}
+
 .brand__logo {
   width: 64px;
 }
 
+/* Desktop layout styles */
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
+  .heading {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
   .nav-link {
     display: initial;
   }

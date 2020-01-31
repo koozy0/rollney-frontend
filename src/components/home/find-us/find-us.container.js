@@ -17,7 +17,9 @@ function FindUsContainer() {
         </svg>
       </div>
       <div style={styles.content}>
-        <h1 style={styles.header}>FIND US</h1>
+        <h1 className="heading" style={styles.header}>
+          FIND US
+        </h1>
         <OutletInfoGrid />
       </div>
     </section>
@@ -29,6 +31,7 @@ export default FindUsContainer
 const styles = {
   wrapper: {
     position: "relative",
+    background: "#d8b49c",
   },
   wave: {
     wrapper: {
@@ -52,8 +55,6 @@ const styles = {
   header: {
     textAlign: "center",
     color: "#fff",
-    fontFamily: "MontserratRegular",
-    fontSize: "2rem",
   },
   content: {
     background: "#d8b49c",

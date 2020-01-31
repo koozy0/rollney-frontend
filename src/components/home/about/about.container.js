@@ -4,7 +4,7 @@ import WhatsChimney from "./whats-chimney"
 
 function AboutContainer() {
   return (
-    <section>
+    <section id="about-what">
       <div style={styles.grid}>
         <AboutRollney />
         <WhatsChimney />

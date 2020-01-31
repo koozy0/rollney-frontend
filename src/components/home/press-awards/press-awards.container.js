@@ -3,7 +3,7 @@ import React from "react"
 
 function PressAwardsContainer() {
   return (
-    <section id="press-awards">
+    <section id="press-awards" style={styles.wrapper}>
       <div style={styles.wave.wrapper}>
         <svg
           style={styles.wave.top.svg}
@@ -17,7 +17,9 @@ function PressAwardsContainer() {
         </svg>
       </div>
       <div style={styles.content}>
-        <h2 style={styles.header}>PRESS / AWARDS</h2>
+        <h1 className="heading" style={styles.header}>
+          PRESS / AWARDS
+        </h1>
         <PressAwardsBanner />
       </div>
     </section>
@@ -27,11 +29,13 @@ function PressAwardsContainer() {
 export default PressAwardsContainer
 
 const styles = {
+  wrapper: {
+    position: "relative",
+    background: "#e8c0a6",
+  },
   header: {
     textAlign: "center",
     color: "#fff",
-    fontFamily: "MontserratRegular",
-    fontSize: "2rem",
   },
   wave: {
     wrapper: {

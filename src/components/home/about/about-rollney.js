@@ -12,7 +12,9 @@ function AboutRollney() {
       <div style={styles.imgAside.wrapper}>
         <img src={flourImg} alt="flour" style={styles.imgAside.img} />
       </div>
-      <p style={styles.text}>Rollney is more than just a dessert.</p>
+      <p className="text" style={styles.text}>
+        Rollney is more than just a dessert.
+      </p>
       <Button style={styles.button} to="/about">
         READ MORE
       </Button>
@@ -53,9 +55,7 @@ const styles = {
   },
   text: {
     textAlign: "center",
-    fontFamily: "MontserratRegular",
     color: "#fff",
-    lineHeight: "1.5",
     position: "relative",
     zIndex: "100",
   },
