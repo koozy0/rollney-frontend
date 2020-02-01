@@ -37,6 +37,7 @@ const styles = {
     top: "0",
     zIndex: "1000",
     minHeight: "64px",
+    boxShadow: "0 2px 10px rgba(0,0,0,.1)",
   },
   header: {
     margin: `0 auto`,

@@ -73,7 +73,7 @@ export default Series
 const styles = {
   section: {
     background: "#ebbc90",
-    padding: "1rem",
+    padding: "2rem 1rem",
   },
   wrapper: {
     maxWidth: "960px",

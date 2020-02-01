@@ -47,7 +47,7 @@ export default SavouryItems
 const styles = {
   section: {
     background: "#eed1b3",
-    padding: "1rem",
+    padding: "2rem 1rem",
   },
   wrapper: {
     maxWidth: "960px",
