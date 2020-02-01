@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import GridItem from "../shared/grid-item"
 import Img from "gatsby-image"
-import NavLink from "../shared/nav-link"
+import { Link } from "gatsby"
 import React from "react"
 
 function Series() {
@@ -39,26 +39,29 @@ function Series() {
     <section style={styles.section}>
       <div style={styles.wrapper}>
         <div style={styles.gridContainer}>
-          <NavLink to="/menu/#kurtos" style={{ padding: "0" }}>
+          <Link to="/menu/#kurtos">
             <GridItem
               series="KURTOS"
               image={<Img fluid={data.kurtos.childImageSharp.fluid} />}
+              isHover={true}
             />
-          </NavLink>
+          </Link>
 
-          <NavLink to="/menu/#ice-cream" style={{ padding: "0" }}>
+          <Link to="/menu/#ice-cream">
             <GridItem
               series="ICE-CREAM"
               image={<Img fluid={data.iceCream.childImageSharp.fluid} />}
+              isHover={true}
             />
-          </NavLink>
+          </Link>
 
-          <NavLink to="/menu/#savoury" style={{ padding: "0" }}>
+          <Link to="/menu/#savoury">
             <GridItem
               series="SAVOURY CONE"
               image={<Img fluid={data.savoury.childImageSharp.fluid} />}
+              isHover={true}
             />
-          </NavLink>
+          </Link>
         </div>
       </div>
     </section>
@@ -70,7 +73,7 @@ export default Series
 const styles = {
   section: {
     background: "#ebbc90",
-    padding: "2rem",
+    padding: "1rem",
   },
   wrapper: {
     maxWidth: "960px",
@@ -83,15 +86,5 @@ const styles = {
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
     gridAutoFlow: "dense",
     gridGap: "2rem",
-    padding: "1rem",
-  },
-  gridItem: {
-    minHeight: "280px",
-    background: "#ccc",
-  },
-  button: {
-    position: "relative",
-    left: "50%",
-    transform: "translateX(-50%)",
   },
 }

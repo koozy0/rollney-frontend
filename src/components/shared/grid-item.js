@@ -1,8 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 
-function GridItem({ series, image, children }) {
+function GridItem({ isHover, series, image, children }) {
+  const [hover, setHover] = useState(false)
+
+  const handleMouseEnter = () => setHover(true)
+  const handleMouseLeave = () => setHover(false)
+
   return (
-    <div>
+    <div
+      style={
+        hover ? { ...styles.wrapper, ...styles.hasMouseover } : styles.wrapper
+      }
+      onMouseEnter={isHover ? handleMouseEnter : null}
+      onMouseLeave={isHover ? handleMouseLeave : null}
+      role="presentation"
+    >
       <div style={{ position: "relative" }}>
         <svg viewBox="0 0 100 25">
           <path
@@ -33,6 +45,12 @@ function GridItem({ series, image, children }) {
 export default GridItem
 
 const styles = {
+  wrapper: {
+    transition: "all 350ms",
+  },
+  hasMouseover: {
+    transform: "scale(1.1)",
+  },
   imgWrapper: {
     width: "100%",
     height: "auto",

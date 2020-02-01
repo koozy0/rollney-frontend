@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-import React from "react"
 import Img from "gatsby-image"
+import React from "react"
 
 function IceCreamItems() {
   const data = useStaticQuery(graphql`
@@ -23,15 +23,17 @@ function IceCreamItems() {
   return (
     <section style={styles.section} id="ice-cream">
       <div style={styles.wrapper}>
-        <h2 style={styles.header}>
-          KURTOS TOPPED WITH VANILLA SOFT SERVE THAT MAKE YOUR DAY
-        </h2>
+        <h1 style={styles.header} className="heading">
+          Kurtos topped with vanilla soft serve that make your day
+        </h1>
 
         <div style={styles.gridContainer}>
           {data.images.nodes.map(image => (
             <div key={image.id}>
               <Img fluid={image.childImageSharp.fluid} />
-              <p style={styles.text}>{image.name}</p>
+              <p style={styles.itemName} className="text">
+                <strong>{image.name}</strong>
+              </p>
             </div>
           ))}
         </div>
@@ -45,18 +47,16 @@ export default IceCreamItems
 const styles = {
   section: {
     background: "#eed1b3",
-    padding: "2rem",
+    padding: "1rem",
   },
   wrapper: {
     maxWidth: "960px",
     margin: "0 auto",
   },
   header: {
-    fontFamily: "MontserratRegular",
     textAlign: "center",
-    padding: "0 16px",
-    marginBottom: "2rem",
     color: "#5f3713",
+    textTransform: "uppercase",
   },
   gridContainer: {
     display: "grid",
@@ -65,17 +65,14 @@ const styles = {
     gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
     gridAutoFlow: "dense",
     gridGap: "2rem",
-    padding: "1rem",
   },
   gridItem: {
     minHeight: "280px",
     background: "#ccc",
   },
-  text: {
+  itemName: {
     textAlign: "center",
-    fontFamily: "MontserratRegular",
     color: "#fff",
     fontSize: "1.2rem",
-    fontWeight: "600",
   },
 }
