@@ -1,4 +1,5 @@
 import React from "react"
+import backdropImage from "./contact-us-background.png"
 
 function ContactUsContainer() {
   return (
@@ -7,6 +8,11 @@ function ContactUsContainer() {
       <h1 className="heading" style={styles.header}>
         CONTACT US
       </h1>
+      <img
+        src={backdropImage}
+        alt="background ice cream cone"
+        style={styles.img}
+      />
       <div style={styles.content}>
         <p className="text">We would love to hear from you</p>
         <p className="text">
@@ -33,6 +39,7 @@ const styles = {
     background: "linear-gradient(to right, #e2ccb4 50%, #cdb29f 50%)",
     display: "grid",
     placeItems: "center",
+    position: "relative",
   },
   spacer: {
     height: "12vmax",
@@ -40,11 +47,24 @@ const styles = {
   header: {
     textAlign: "center",
     color: "#fff",
+    position: "relative",
+    zIndex: "1",
+  },
+  img: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    opacity: "0.3",
+    height: "70%",
+    width: "auto",
   },
   content: {
     padding: "1rem",
     textAlign: "center",
     color: "#fff",
+    position: "relative",
+    zIndex: "1",
   },
   link: {
     color: "#fff",

@@ -1,6 +1,6 @@
 import Button from "../../shared/button"
 import React from "react"
-import flourImg from "../../../images/flour.png"
+import flourImg from "./flour.png"
 
 function AboutRollney() {
   return (
@@ -26,7 +26,7 @@ export default AboutRollney
 
 const styles = {
   wrapper: {
-    padding: "15% 5%",
+    padding: "3rem 1rem 0",
     position: "relative",
     overflow: "hidden",
   },
@@ -34,11 +34,13 @@ const styles = {
     base: {
       fontSize: "3rem",
       fontWeight: "400",
-      maxWidth: "280px",
+      maxWidth: "260px",
       marginTop: "0",
       marginLeft: "auto",
       marginRight: "auto",
       marginBottom: "1rem",
+      position: "relative",
+      zIndex: "100",
     },
     cursive: {
       color: "#fff",
@@ -69,13 +71,13 @@ const styles = {
       position: "absolute",
       top: "50%",
       left: "0",
-      height: "50%",
-      width: "50%",
+      height: "70%",
+      width: "auto",
       transform: "translate(-60%, -50%)",
     },
     img: {
-      width: "100%",
-      height: "auto",
+      width: "auto",
+      height: "100%",
     },
   },
 }

@@ -1,6 +1,6 @@
 import Button from "../../shared/button"
 import React from "react"
-import rollingPinImg from "../../../images/rolling-pin.png"
+import rollingPinImg from "./rolling-pin.png"
 
 function WhatsChimney() {
   return (
@@ -30,7 +30,7 @@ export default WhatsChimney
 
 const styles = {
   wrapper: {
-    padding: "15% 5%",
+    padding: "3rem 1rem 0",
     position: "relative",
     overflow: "hidden",
   },
@@ -38,11 +38,13 @@ const styles = {
     base: {
       fontSize: "3rem",
       fontWeight: "400",
-      maxWidth: "280px",
+      maxWidth: "260px",
       marginTop: "0",
       marginLeft: "auto",
       marginRight: "auto",
       marginBottom: "1rem",
+      position: "relative",
+      zIndex: "100",
     },
     cursive: {
       color: "#fff",
@@ -73,13 +75,13 @@ const styles = {
       position: "absolute",
       top: "50%",
       right: "0",
-      height: "50%",
-      width: "50%",
-      transform: "translate(50%, -50%) rotate(15deg)",
+      height: "70%",
+      width: "auto",
+      transform: "translate(40%, -50%) rotate(15deg)",
     },
     img: {
-      width: "100%",
-      height: "auto",
+      width: "auto",
+      height: "100%",
     },
   },
 }
