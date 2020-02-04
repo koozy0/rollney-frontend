@@ -49,7 +49,7 @@ const styles = {
     transition: "all 350ms",
   },
   hasMouseover: {
-    transform: "scale(1.1)",
+    transform: "scale(1.03)",
   },
   imgWrapper: {
     width: "100%",
